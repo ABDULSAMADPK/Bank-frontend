@@ -1,0 +1,36 @@
+
+
+                                Conatact Managment App API based Angular Project
+
+                        1. Create a Angular project
+                        2. Instal bootstrap and font-awsome
+                        3. paste cdn link of font-awsome in index.html
+                        4. configure bootstrap and font awsome in angular.json
+                        5. configure google fonts - paste @import statements in style.css
+                        6. Create Component needed for the project
+                                - ContactManager - display all contacts and mangage them
+                                - addContact - add a new contact 
+                                - updateContact - update the exsiting contact
+                                - viewContact - to view a perticular contact
+                                - pageNotDound - to display page not found
+                                - navbar - place its selector inside root component html page
+                        7. set up path for each Component that we neede to view in browser
+                                - Inside app-routing.module.ts , routes array
+                                - use router-outlet selector inside appComponent.html page to view the requested component 
+                        8. Design html page of each component
+                        9. set up the server api -
+                                - create server folder inside the project
+                                - create db.json file
+                                - open cmd from server folder
+                                        - create package.json file - command: npm init
+                                        - install json-server inside server folder
+                                        - update package.json file, script as "start": "json.server --watch db.json --port 3000"
+                                        - to run server use command: npm start
+                        10. Create model for contacts and groups
+                                - create model folder in src file
+                                - create myContact.ts file 
+                                - create myGroup.ts file 
+                        11. Create an angular service for making api call 
+                        12. to get http methods - get,post,put,patch,delete
+                                - Import HttpClientModule in app.module.ts
+                                - HttpClient
