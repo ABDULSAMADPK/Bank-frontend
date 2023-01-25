@@ -1,0 +1,11 @@
+<app-header (isSideBarToggle)="isSideBarToggle()"></app-header>
+
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" [opened]="sideBar"><app-side-nav></app-side-nav></mat-drawer>
+    <mat-drawer-content><app-dashboard></app-dashboard>
+    </mat-drawer-content>
+</mat-drawer-container>
+
+<mat-divider></mat-divider>
+
+<app-footer></app-footer>
